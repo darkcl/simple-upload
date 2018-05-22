@@ -5,7 +5,7 @@ MAINTAINER Yeung Yiu Hung <hkclex@gmail.com>
 # Debian Base to use
 ENV DEBIAN_VERSION jessie
 
-# initial install of av daemon
+# Install ClamAV and supervisor
 RUN echo "deb http://http.debian.net/debian/ $DEBIAN_VERSION main contrib non-free" > /etc/apt/sources.list && \
     echo "deb http://http.debian.net/debian/ $DEBIAN_VERSION-updates main contrib non-free" >> /etc/apt/sources.list && \
     echo "deb http://security.debian.org/ $DEBIAN_VERSION/updates main contrib non-free" >> /etc/apt/sources.list && \
